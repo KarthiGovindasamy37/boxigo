@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Portal from './Portal';
+import Quotes from './pages/Quotes';
+import Profile from './pages/Profile';
+import Moves from './pages/Moves';
+import 'react-toastify/dist/ReactToastify.css';
+import { Flip, ToastContainer } from 'react-toastify';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <BrowserRouter>
+     <Routes>
+      <Route path="/" element={<Portal/>}>
+        <Route index element={<Moves/>}/>
+        <Route path="quotes" element={<Quotes/>}/>
+        <Route path="profile" element={<Profile/>}/>
+      </Route>
+     </Routes>
+     <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+        transition={Flip}
+      />
+     </BrowserRouter>
     </div>
   );
 }

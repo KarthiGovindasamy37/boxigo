@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slogan{
+    font-size: small;
+    color: rgb(235, 48, 48);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-border{
+    border-left: 4px solid rgb(235, 48, 48);    
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-pad{
+    padding-left: 4px;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-link{
+    text-decoration: none;
+    color: black;
+    border-color: rgb(235, 48, 48);
+    font-weight: 500;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link:hover{
+    color: black;
+}
+.logout:hover{
+    cursor: pointer;
+}
+.logout{
+    font-weight: 500;
+}
+.request-no{
+    color: rgb(235, 48, 48);
+}
+.arrow{
+    padding: 5px;
+    border-radius: 50%;
+    color: rgb(235, 48, 48);
+}
+.add-height{
+    min-height: 70px;
+}
+.tri{
+    color: rgb(235, 48, 48);
+}
+.one-move{
+    border-bottom: 1px solid rgb(211, 208, 208);
+}
+.no-drop{
+    display: none;
+}
+.view-btn{
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    border: 2px solid rgb(235, 48, 48);
+    background-color: white;
+    color: rgb(235, 48, 48);
+}
+.quote-btn{
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    background-color: rgb(235, 48, 48);
+    border: 2px solid rgb(235, 48, 48);
+    color: white;
+}
+.edit-btn{
+    height: 35px;
+    width: 160px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+.inventory-btn{
+    height: 35px;
+    width: 130px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+.qty{
+    background-color: rgb(235, 48, 48);
+    border-radius: 50%;
+    padding: 0 4px;
+    font-size: medium;
+    color: white;
+    height: 27px;
+}
+.less-qty{
+    background-color: rgb(235, 48, 48);
+    border-radius: 50%;
+    padding: 0 6px;
+    font-size: medium;
+    color: white;
+    height: 25px;
+}
+.chevron{
+    background-color: black;
+    color: rgb(175, 172, 172);
+    border-radius: 18px;
+    border-color: 1px solid white;
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+.inventory{
+    background-color: rgb(175, 172, 172);
+}
+.inventory:hover{
+    cursor: pointer;
+}
+.chev-div{
+    position: relative;
+}
+.inventory-deta-div{
+   display: none;
+}
+.inventory-deta-div-hei{
+    min-height: 50px;
+}.item-name{
+    font-size: larger;
+    font-weight: 400;
+}
+.spinner-div{
+    height: 100px;
 }
